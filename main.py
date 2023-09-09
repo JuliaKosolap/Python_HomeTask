@@ -26,39 +26,54 @@
 # prod = n1 * n2 * n3 * n4
 # print(prod)
 
-#Task2.1
-n1 = int(input("Enter first number: "))
-n2 = int(input("Enter second number: "))
-n3 = int(input("Enter third number: "))
+# #Task2.1
+# n1 = int(input("Enter first number: "))
+# n2 = int(input("Enter second number: "))
+# n3 = int(input("Enter third number: "))
+#
+# str1 = "max"
+# str2 = "min"
+# str3 = "average"
+#
+# if n1 < n2 < n3:
+#     min = n1
+# elif n2 < n1 < n3:
+#     min = n2
+# else:
+#     min = n3
+#
+# if n1 > n2 < n3:
+#     max = n1
+# elif n2 > n1 < n3:
+#     max = n2
+# else:
+#     max = n3
+#
+# average = (n1 + n2 + n3)/3
+#
+# action = (input("Enter one of the action: max, min or average: "))
+#
+# if action == "min":
+#     print(min)
+# elif action == "max":
+#     print(max)
+# elif action == "average":
+#     print(average)
+# else: print("Invalid value was provided")
 
-str1 = "max"
-str2 = "min"
-str3 = "average"
 
-if n1 < n2 < n3:
-    min = n1
-elif n2 < n1 < n3:
-    min = n2
-else:
-    min = n3
+#Task2.2
+number = int(input("Enter number of meters: "))
+unit = (input("Enter an unit to which you want to convert your meters (miles, inches or yards): "))
 
-if n1 > n2 < n3:
-    max = n1
-elif n2 > n1 < n3:
-    max = n2
-else:
-    max = n3
+miles = number / 1609.344
+inches = number * 39.3701
+yards = number * 1.09361
 
-average = (n1 + n2 + n3)/3
-
-action = (input("Enter one of the action: max, min or average: "))
-
-if action == "min":
-    print(min)
-elif action == "max":
-    print(max)
-elif action == "average":
-    print(average)
-else: print("Invalid value was provided")
-
-
+if unit == "miles":
+    print(miles)
+elif unit == "inches":
+    print(inches)
+elif unit == "yards":
+    print(yards)
+else: print ("Invalid value was provided")
