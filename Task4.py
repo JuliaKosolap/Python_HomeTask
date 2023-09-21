@@ -1,13 +1,13 @@
 # # Task1
 #
 # word = (input("Enter letters and/or digits: "))
-# lettersNumber = 0
-# digitsNumber = 0
+# letters_number = 0
+# digits_number = 0
 # for i in range(len(word)):
 #     if word[i].isalpha():
-#         lettersNumber += 1
+#         letters_number += 1
 #     elif word[i].isdigit():
-#         digitsNumber += 1
+#         digits_number += 1
 #     else:
 #         print("Invalid value was provided")
 #
@@ -17,21 +17,21 @@
 # # Task2
 # word = (input("Enter any word: "))
 # symbol = (input("Enter any symbol that is present in this word: "))
-# symbolsCount = 0
+# symbols_count = 0
 #
 # for i in range(len(word)):
 #     if word[i] == symbol:
 #         symbolsCount += 1
 #
-# print(symbolsCount)
+# print(symbols_count)
 
 # # Task3
 #
-# initialPhrase = (input("Enter any phrase: "))
-# wordToFind = (input("Enter word from phrase which you want to replace: "))
-# wordToReplace = (input("Enter from you want to replace with: "))
+# initial_phrase = (input("Enter any phrase: "))
+# word_to_find = (input("Enter word from phrase which you want to replace: "))
+# word_to_replace = (input("Enter from you want to replace with: "))
 #
-# print(initialPhrase.replace(wordToFind, wordToReplace))
+# print(initial_phrase.replace(word_to_find, word_to_replace))
 
 # Task4
 
@@ -42,25 +42,25 @@ print(sentence[len(sentence) - 2])
 print(sentence[0:5])
 print(sentence[0: len(sentence) - 2])
 
-newWord = ""
+new_word = ""
 for i in range(0, len(sentence), 2):
-    newWord = newWord + sentence[i]
+    new_word = new_word + sentence[i]
 
-print(newWord)
+print(new_word)
 
-newWord = ""
+new_word = ""
 for i in range(1, len(sentence), 2):
-    newWord = newWord + sentence[i]
+    new_word = new_word + sentence[i]
 
-print(newWord)
+print(new_word)
 
 print(sentence[::-1])
 
-newWord = ""
+new_word = ""
 reverted = sentence[::-1]
 for i in range(0, len(reverted), 2):
-    newWord = newWord + reverted[i]
+    new_word = new_word + reverted[i]
 
-print(newWord)
+print(new_word)
 
 print(len(sentence))
