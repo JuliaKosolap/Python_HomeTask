@@ -17,6 +17,7 @@ for i in range(0, 5):
     random_list.append(num)
 print(random_list)
 
+# Task 2
 # Get production of numbers in a list
 prod = get_numbers_prod(random_list)
 print(prod)
@@ -27,11 +28,13 @@ def get_min_number(numbers):
     return minimum_number
 
 
+# Task3
 # Get minimum number in a list
 minimum = get_min_number(random_list)
 print(minimum)
 
 
+# Task4
 # Get count of prime numbers in a list
 def is_prime(num):
     if num <= 1:
@@ -56,6 +59,7 @@ count = len(new_list)
 print(count)
 
 
+# Task5
 # Remove a number from the list
 def remove_number_from_list(num, list):
     new_list = []
@@ -84,6 +88,7 @@ mixed_lists = mix_lists(list1, list2)
 print(mixed_lists)
 
 
+# Task6
 # Get the power of numbers in the list
 def raise_number_to_power(power, random_list):
     result_list = []
