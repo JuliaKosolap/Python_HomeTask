@@ -1,8 +1,7 @@
 # Task1
 import numpy
 
-numbers = [3, 8, -2, 10, 0, -4, 7, 3, -3, 10]
-
+numbers = [8, 3, -2, 10, 0, -4, 7, 3, -3, 10]
 negative_sum = 0
 for number in numbers:
     if number < 0:
@@ -31,15 +30,20 @@ print(numpy.prod(result_list))
 
 print(max(numbers) * min(numbers))
 
-new_list = []
-first_positive_element_index = 0
-last_positive_element_index = 0
-for number in numbers:
-    if number > 0:
-        first_positive_element_index = numbers.index(number)
-        new_list.append(number)
-result_list = new_list[1:-1]
-print(sum(result_list))
+numbers = [8, 3, -2, 10, 0, -4, 7, 3, -3, 10]
+first_positive_index = 0
+last_positive_index = 0
+for i in range(len(numbers) - 1):
+    if numbers[i] > 0:
+        first_positive_index = i
+        break
+
+for i in range(len(numbers) - 1, -1, -1):
+    if numbers[i] > 0:
+        last_positive_index = i
+        break
+new_list = numbers[first_positive_index + 1:last_positive_index]
+print(sum(new_list))
 
 # Task2
 numbers = [3, 8, -2, 10, 0, -4, 7, 3, -3, 10]
